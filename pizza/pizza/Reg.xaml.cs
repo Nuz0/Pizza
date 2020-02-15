@@ -10,26 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace pizza
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Reg.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Reg : Window
     {
-        public MainWindow()
+        public Reg()
         {
             InitializeComponent();
         }
 
-        private void Reg_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Reg w = new Reg();
-            w.Show();
+            MainWindow g = new MainWindow();
+            g.Show();
+
         }
     }
 }
