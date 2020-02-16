@@ -9,14 +9,16 @@
       Title="regin">
 
     <Grid x:Name="r" Background="White">
-        <TextBox x:Name="textBox_login" HorizontalAlignment="Left" Height="23" Margin="330,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="330,227,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
-        <PasswordBox x:Name="password_Copy" HorizontalAlignment="Left" Margin="330,275,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="330,149,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="330,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,-0.654"/>
-        <Label Content="Повторите пароль" HorizontalAlignment="Left" Margin="330,250,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_login" HorizontalAlignment="Left" Height="23" Margin="330,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="330,166,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <PasswordBox x:Name="password_Copy" HorizontalAlignment="Left" Margin="330,214,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="330,88,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="330,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,-0.654"/>
+        <Label Content="Повторите пароль" HorizontalAlignment="Left" Margin="330,189,0,0" VerticalAlignment="Top"/>
         <Button x:Name="RegButton" Content="Регистрация" HorizontalAlignment="Left" Margin="330,303,0,0" VerticalAlignment="Top" Width="120" Click="RegButton_Click"/>
         <Button x:Name="BackButton" Content="отмена" HorizontalAlignment="Left" Margin="330,328,0,0" VerticalAlignment="Top" Width="120" Click="BackButton_Click"/>
+        <Label Content="Почта" HorizontalAlignment="Left" Margin="331,237,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.263,0.5"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="330,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Page>

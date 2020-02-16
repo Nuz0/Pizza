@@ -29,6 +29,7 @@ namespace pizza
         public enum pages { 
         login,
         regin
+        
         }
        public void OpenPage (pages pages)
         {
@@ -51,6 +52,7 @@ namespace pizza
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand); // создаём обработчик
             sqlDataAdapter.Fill(dataTable);                                 // возращаем таблицу с результатом
             return dataTable;
+
         }
 
 
