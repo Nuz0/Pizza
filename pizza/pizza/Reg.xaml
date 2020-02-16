@@ -9,9 +9,10 @@
     <Grid>
         <TextBox x:Name="EmailBox" HorizontalAlignment="Left" Height="23" Margin="340,189,0,0" TextWrapping="Wrap" Text="Почта" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="passBox" HorizontalAlignment="Left" Height="23" Margin="340,217,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="RegBut" Content="Регистрация" HorizontalAlignment="Left" Margin="340,245,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="RegBut" Content="Регистрация" HorizontalAlignment="Left" Margin="340,245,0,0" VerticalAlignment="Top" Width="120" Click="RegBut_Click"/>
         <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="707,389,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click"/>
         <TextBox x:Name="LogiBox" HorizontalAlignment="Left" Height="23" Margin="340,161,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="120"/>
+        <Frame x:Name="Frame" Content="Frame" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792"/>
 
     </Grid>
 </Window>

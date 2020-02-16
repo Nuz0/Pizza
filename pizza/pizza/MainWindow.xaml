@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="Auto" Content="Авторизировтся" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="340,238,322,161" IsCancel="True"/>
+        <Button x:Name="Auto" Content="Авторизировтся" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="340,238,322,161" IsCancel="True" Click="Auto_Click"/>
         <Button x:Name="Reg" Content="Регистрация" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="340,263,322,136" Click="Reg_Click"/>
         <TextBox x:Name="LoginBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="130" Margin="340,182,322,214" AutomationProperties.HelpText="Логин" AutomationProperties.Name="LoginBox"/>
         <TextBox x:Name="PassBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="130" Margin="340,210,322,186"/>

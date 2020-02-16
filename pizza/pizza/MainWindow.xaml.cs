@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using Microsoft.IdentityModel.Protocols;
+using MongoDB.Driver.Core.Configuration;
 
 namespace pizza
 {
@@ -23,6 +28,8 @@ namespace pizza
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
 
         private void Reg_Click(object sender, RoutedEventArgs e)
@@ -30,6 +37,11 @@ namespace pizza
             this.Hide();
             Reg w = new Reg();
             w.Show();
+        }
+
+        private void Auto_Click(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }
