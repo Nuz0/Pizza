@@ -24,7 +24,21 @@ namespace pizza
         public Reg()
         {
             InitializeComponent();
-            Frame.Navigate(new login());
+            OpenPage(pages.login);
+        }
+        public enum pages { 
+        login,
+        regin
+        }
+       public void OpenPage (pages pages)
+        {
+            if (pages == pages.login) {
+                Frame.Navigate(new login(this));
+            }
+            else if (pages== pages.regin )
+            {
+                Frame.Navigate(new regin(this));
+            }
         }
         public DataTable Select(string selectSQL) // функция подключения к базе данных и обработка запросов
         {
@@ -38,22 +52,7 @@ namespace pizza
             sqlDataAdapter.Fill(dataTable);                                 // возращаем таблицу с результатом
             return dataTable;
         }
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            MainWindow g = new MainWindow();
-            g.Show();
 
-        }
 
-        private void RegBut_Click(object sender, RoutedEventArgs e)
-        {
-            DataTable dt_user = Select("SELECT * FROM [dbo].[Users]"); // получаем данные из таблицы
-
-            for (int i = 0; i < dt_user.Rows.Count; i++)
-            { // перебираем данные
-                MessageBox.Show(dt_user.Rows[i][0] + "|" + dt_user.Rows[i][1]); // выводим данные
-            }
-        }
     }
 }
